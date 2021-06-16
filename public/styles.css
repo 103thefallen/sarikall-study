@@ -1,0 +1,121 @@
+body {
+  background-color: #07060a;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+.alert {
+  position: absolute;
+  box-sizing: border-box;
+  width: 680px;
+  height: 45px;
+  color: #c04040;
+  font-size: 18px;
+  padding-top: 12px;
+  text-align: center;
+  border: 1px solid #c04040;
+  border-radius: 4px;
+  top: 20px;
+  transition: 0.4s;
+  transition-timing-function: cubic-bezier(0.54, 0.01, 0.62, 1.48);
+}
+
+.alert__hidden {
+  top: -30px;
+  opacity: 0;
+}
+
+.main-page {
+  width: 680px;
+  margin: 0 auto;
+}
+
+.main--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30vh;
+}
+
+.main--logo h1 {
+  font-size: 94px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.enter {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.enter--input {
+  box-sizing: border-box;
+  width: 400px;
+  height: 45px;
+  margin-right: 20px;
+  background: none;
+  border: 1px rgba(255, 255, 255, 0.5) solid;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 12px;
+}
+
+.enter--input::placeholder {
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+.enter--button {
+  width: 260px;
+  height: 45px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.enter--button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.create--button {
+  width: 680px;
+  height: 45px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.create--button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.credentials {
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.members--you::after {
+  content: " you";
+}

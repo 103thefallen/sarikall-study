@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spy Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- main page -->
+    <div class="container main-page">
+      <div class="alert alert__hidden">
+        Room with this token doesn’t exist. Check if the entered token is
+        correct.
+      </div>
+      <div class="main--content">
+        <div class="main--logo"><h1>spy game</h1></div>
+        <div class="enter">
+          <input
+            type="text"
+            class="enter--input"
+            placeholder="Enter a room token"
+          />
+          <button class="enter--button">Join the room</button>
+        </div>
+        <div class="create">
+          <button class="create--button">Create a room</button>
+        </div>
+        <div class="credentials">
+          <a href="#" class="credentials--link">by sarikall std,.</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- room page 
+    <div class="container room-page">
+      <div class="room--members">
+        <ul class="members--list">
+          <li class="members--you">
+            <div class="members--ava members--ava__purple"></div>
+            purple
+          </li>
+          <li>
+            <div class="members--ava members--ava__green"></div>
+            green
+          </li>
+        </ul>
+        <button type="button" class="members--leave-button">
+          Leave the game
+        </button>
+      </div>
+
+      <div class="room--container">
+        <div class="room--container-top">
+          <span>top container</span>
+          <p>asd</p>
+          <br />
+          <p>dsa</p>
+        </div>
+        <div class="room--container-center">
+          <span>center container</span>
+          <div class="room--welcome">
+            <p class="welcome--token">xq7cZ</p>
+            <p class="welcome--player-counter">4/8 players in the room</p>
+          </div>
+          <div class="room--start">
+            <p class="start--text">YOUR WORD</p>
+          </div>
+          <div class="room--move">
+            <li class="end--player end--player__purple"></li>
+            <div class="move--player"></div>
+            <div class="move--text">
+              <p>
+                Association, comments, systems and lorem ipsum dolore mare pute,
+                pate, mare.
+              </p>
+            </div>
+            <div class="move--hr"></div>
+          </div>
+          <div class="room--voting">
+            <p class="voting--text">Green is boted off. he was a spy.</p>
+            <ul class="voting--players">
+              <li class="voting--player voting--player__purple">
+                <div class="voting--player-ava"></div>
+                0
+              </li>
+              <li
+                class="
+                  voting--player voting--player__green voting--player__chosen
+                "
+              >
+                <div class="voting--player-ava"></div>
+                6
+              </li>
+              <li
+                class="
+                  voting--player
+                  voting--player__green
+                  voting--player__chosen
+                  voting--player__kicked
+                "
+              >
+                <div class="voting--player-ava"></div>
+                6
+              </li>
+            </ul>
+          </div>
+          <div class="room--end">
+            <p class="end--title">Spies win!</p>
+            <ul class="end--players">
+              <li class="end--player end--player__purple"></li>
+              <li
+                class="end--player end--player__green end--player__kicked"
+              ></li>
+            </ul>
+            <div class="end--survivors">1 civilian left</div>
+            <div class="end--time">time played: 00:58</div>
+          </div>
+        </div>
+        <div class="room--container-bottom">
+          <span>bottom container</span>
+          <div class="room--spies-count room--spies-count__alert">helloooo</div>
+          <div class="room--ready-button"><button>Ready</button></div>
+          <div class="room--end-buttons">
+            <div class="end-buttons">
+              <button class="end-buttons--replay-button">R</button>
+              <button class="end-buttons--logout-button">L</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room--chat">
+        <div class="chat--log">
+          <ul class="chat--log-list">
+            <li class="chat--message">Green logged in</li>
+            <li class="chat--message chat--message__purple">
+              <div class="members--ava members--ava__purple"></div>
+              Hi, im purple!
+            </li>
+          </ul>
+        </div>
+        <div class="chat--input">
+          <input type="text" class="chat--text-input" />
+          <button class="chat--send-button">send</button>
+        </div>
+      </div>
+    </div>
+    -->
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+  </body>
+</html>
